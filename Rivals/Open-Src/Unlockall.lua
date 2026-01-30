@@ -7,7 +7,7 @@ local HttpService = game:GetService("HttpService")
 local player = Players.LocalPlayer
 local playerScripts = player.PlayerScripts
 local controllers = playerScripts.Controllers
-local saveFile = "kljgahjkh/config.json"
+local saveFile = "Symbol.gg/config.json"
 local EnumLibrary = require(ReplicatedStorage.Modules:WaitForChild("EnumLibrary", 10))
 if EnumLibrary then EnumLibrary:WaitForEnumBuilder() end
 local CosmeticLibrary = require(ReplicatedStorage.Modules:WaitForChild("CosmeticLibrary", 10))
@@ -45,7 +45,7 @@ local function saveConfig()
 				end
 			end
 		end
-		makefolder("kljgahjkh")
+		makefolder("Symbol.gg")
 		writefile(saveFile, HttpService:JSONEncode(config))
 	end)
 end
